@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+body {
+    margin: 0;
+    background-color: #d0e0eb;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+}
+
+.left-panel {
+    flex: 1;
+    background-color: #4a708b;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.left-panel .logo p {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+header h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-link {
+    background-color: #bdf225;
+    border: none;
+    padding: 5px 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-grid {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-field input[type="email"],
+.form-field input[type="password"] {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+.submit-button-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.register-button {
+    background-color: #bdf225;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    .left-panel {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .form-field {
+        width: 100%;
+    }
+}

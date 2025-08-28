@@ -1,44 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="../CSS/Inicio_estilos.css">
 </head>
 <body>
-      <div class="right-panel">
+    <div class="container">
+        <div class="right-panel">
             <header>
                 <h1>TE DAMOS LA BIENVENIDA A "NOMBRE DE LA PÁGINA"</h1>
-            <p>
-                ¿YA TIENES UNA CUENTA? 
-                 <button class="login-link">Registrase</button>
-            </p>
-            <form action="registrar" method="post">
+                <p>
+                    ¿NO TIENES CUENTA? 
+                    <button class="login-link">REGISTRARTE</button>
+                </p>
+            </header>
+
+            <form action="iniciar" method="post">
                 <div class="form-grid">
                     <div class="form-field">
-                        <label for="email">Correo Electronico</label>
+                        <label for="email">EMAIL REGISTRADO:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="form-field">
-                        <label for="password">Contraseña</label>
+                        <label for="password">CONTRASEÑA:</label>
                         <input type="password" id="password" name="password" required>
                     </div>
                 </div>
-            </form>
-             <div class="submit-button-container">
-                    <button type="submit" class="register-button">Registrase Ahora</button>
+
+                <div class="submit-button-container">
+                    <button type="submit" class="register-button">ENVIAR</button>
                 </div>
             </form>
+
             <footer>
                 <a href="#">INFORMACIÓN DE SERVICIOS, POLÍTICA Y AVISOS</a>
             </footer>
-            <div class="container">
-                 <div class="left-panel">
-                     <div class="logo">
-                        <p>LOGO</p>
-                    </div>
-                </div>
-        </header>
+        </div>
+
+        <div class="left-panel">
+            <div class="logo">
+                <p>LOGO</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
