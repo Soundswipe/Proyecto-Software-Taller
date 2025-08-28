@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="close-btn">X</span>
+            <h2>Carrito</h2>
+        </div>
+        <div id="cart-content"></div>
+        <div class="total-section">
+            <h3>SubTotal: <span id="subtotal"></span></h3>
+        </div>
+    </div>
+    <script>
+        const cartContent = document.getElementById('cart-content');
+        const subttotalElement = document.getElementById('subtotal');
+
+        const isCartEmpty = true;
+
+        if (isCartEmpty) {
+            cartContent.innerHTML = `
+                <div class="empty-cart">
+                    <img src="Imagenes/gato.jpg" alt="gato en un carrito vacio">
+                    <p> Su carrito esta vacio<br>Continue Comprando</p>
+                    </div>
+                    `;
+            subttotalElement.textContent = '0';
+        } else {
+            cartContent.innerHTML = `
+            <div class = "cart-item">
+                <div class ="item-info">
+                    <div class="item-name red"></div>
+                    <div class="quantity-control">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                   </div>
+                </div>
+                <div class="item-actions">
+                    <span class="price">$10.00</span>
+                    <button class="action-btn check">✓</button>
+                    <button class="action-btn close">X</button>
+                </div>
+            </div>
+            <div class ="cart-item">
+                <div class ="item-info">
+                    <div class="item-image red"></div>
+                    <div class= "quantity-controls">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="item-actions">
+                    <span class="price">$10.00</span>
+                    <button class="action-btn check">✓</button>
+                    <button class="action-btn close">X</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class ="item-info">
+                    <div class="item-image purple"></div>
+                    <div class="quantity-controls">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="item-actions">
+                    <span class="price">$10.00</span>
+                    <button class="action-btn check">✓</button>
+                    <button class="action-btn close">X</button>
+                </div>
+            </div>
+            <div class="buttons-group">
+                <button class ="vaciar-btn">Vaciar Carrito</button>
+                <button class="proceder-btn">Proceder a Pagar</button>
+           </div> 
+            `;
+            subttotalElement.textContent = '30.00';
+        }
+    </script>
+</body>
+
+</html>
