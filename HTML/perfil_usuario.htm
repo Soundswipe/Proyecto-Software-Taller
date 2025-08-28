@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+</head>
+<body>
+     <div class="perfil_titul">
+        <div class="header">
+                <h1>PERFIL</h1>
+            <img src="#" alt="Edit Icon" class="edit-icon">
+        </div>
+     </div>
+
+     <div class="profile-pic-container">
+        <div class="profile-pic">
+            <img src="#" alt="Profile Picture">
+        </div>
+     </div>
+
+    <form class="form-grid">
+        <div class="form-group">
+            <label for="nombre-usuario">Nombre de Usuario</label>
+            <input type="text" id="nombre_usuario" name="nombre_usuario">
+        </div>
+        <div class="form-group">
+            <label for="correo-electronico">Correo Electronico</label>
+            <input type="email" id="correo_electronico" name="correo_electronico">
+        </div>
+        <div class="form-group">
+            <label for="edades">Edades</label>
+            <input type="number" id="edades" name="edades">
+        </div>
+        <div class="form-group">
+            <label for="direccion-casa">Direccion de casa</label>
+            <input type="text" id="direccion-casa" name="direccion-casa">
+        </div>
+
+    <div class="form-group">
+      <label for="numero-telefono">NUMERO DE TELÉFONO</label>
+      <input type="tel" id="numero-telefono" name="numero-telefono">
+    </div>
+
+    <div class="form-group">
+      <label for="codigo-postal">CÓDIGO POSTAL</label>
+      <input type="text" id="codigo-postal" name="codigo-postal">
+    </div>
+
+    <div class="form-group">
+      <label for="sexo">SEXO</label>
+      <select id="sexo" name="sexo">
+        <option value="">Seleccione</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="no-binario">No binario</option>
+        <option value="prefiero-no-decir">Prefiero no decir</option>
+      </select>
+    </div>
+    
+    <div class="delete-button">
+      <button type="button">
+        BORRA LA CUENTA
+        <span class="fire-emoji">🔥</span>
+      </button>
+    </div>
+  </form>
+
+  <div class="save-button-container">
+    <button type="submit" class="save-button">
+      GUARDAR CAMBIOS
+    </button>
+  </div>
+</div>
+</body>
+</html>
